@@ -1,0 +1,166 @@
+{
+  "name": "MS-Dynamics",
+  "description": "Microsoft Dynamics plugin for kaholo",
+  "type": "executer",
+  "main": "app.js",
+  "execProgram": "node",
+  "exposeRoute": false,
+  "imgUrl": "logo.png",
+  "version": "1.0.0",
+  "settings" : [
+    {
+      "name": "authorityUrl",
+      "viewName": "Authority URL",
+      "type": "string"
+    },
+    {
+      "name": "clientId",
+      "viewName": "Client ID",
+      "type": "string"
+    },
+    {
+      "name": "username",
+      "viewName": "Username",
+      "type": "string"
+    },
+    {
+      "name": "password",
+      "viewName": "Password",
+      "type": "vault"
+    },
+    {
+      "name": "resource",
+      "viewName": "Resource",
+      "type": "string"
+    }
+  ],
+  "methods": [
+    {
+      "name": "exportSolution",
+      "viewName": "Export Solution",
+      "params": [
+        {
+          "name": "outputPath",
+          "viewName": "Output Path",
+          "type": "string"
+        },
+        {
+          "name": "solutionName",
+          "viewName": "Solution Name",
+          "type": "string"
+        },
+        {
+          "name": "managed",
+          "viewName": "Managed",
+          "type": "boolean"
+        },
+        {
+          "name": "exportAutoNumberingSettings",
+          "viewName": "Export Auto Numbering",
+          "type": "boolean"
+        },
+        {
+          "name": "exportCalendarSettings",
+          "viewName": "Export Calendar",
+          "type": "boolean"
+        },
+        {
+          "name": "exportCustomizationSettings",
+          "viewName": "Export Customization",
+          "type": "boolean"
+        },
+        {
+          "name": "exportEmailTrackingSettings",
+          "viewName": "Export Email Tracking",
+          "type": "boolean"
+        },
+        {
+          "name": "exportGeneralSettings",
+          "viewName": "Export General",
+          "type": "boolean"
+        },
+        {
+          "name": "exportMarketingSettings",
+          "viewName": "Export Marketing",
+          "type": "boolean"
+        },
+        {
+          "name": "exportOutlookSynchronizationSettings",
+          "viewName": "Export Outlook Synchronization",
+          "type": "boolean"
+        },
+        {
+          "name": "exportRelationshipRoles",
+          "viewName": "Export Relationship Roles",
+          "type": "boolean"
+        },
+        {
+          "name": "exportIsvConfig",
+          "viewName": "Export ISV Config",
+          "type": "boolean"
+        },
+        {
+          "name": "exportSales",
+          "viewName": "Export Sales",
+          "type": "boolean"
+        },
+        {
+          "name": "exportExternalApplications",
+          "viewName": "Export External Applications",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "importSolution",
+      "viewName": "Import Solution",
+      "params": [
+        {
+          "name": "zipPath",
+          "viewName": "ZIP Path",
+          "type":"string"
+        },
+        {
+          "name": "importJobId",
+          "viewName": "importJobId",
+          "type":"string"
+        },
+        {
+          "name": "overwriteUnmanagedCustomizations",
+          "viewName": "Overwrite Unmanaged Customizations",
+          "type":"boolean"
+        },
+        {
+          "name": "publishWorkflows",
+          "viewName": "Publish Workflows",
+          "type":"boolean"
+        },
+        {
+          "name": "convertToManaged",
+          "viewName": "Convert To Managed",
+          "type":"boolean"
+        },
+        {
+          "name": "skipProductUpdateDependencies",
+          "viewName": "Skip Product Update Dependencies",
+          "type":"boolean"
+        },
+        {
+          "name": "holdingSolution",
+          "viewName": "Holding Solution",
+          "type":"boolean"
+        },
+        {
+          "name": "skipQueueRibbonJob",
+          "viewName": "Skip Queue Ribbon Job",
+          "type":"boolean"
+        },
+        {
+          "name": "asyncRibbonProcessing",
+          "viewName": "Async Ribbon Processing",
+          "type":"boolean"
+        }
+      ]
+    }
+  ]
+}

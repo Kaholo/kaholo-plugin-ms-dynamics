@@ -1,0 +1,16 @@
+{
+  "name": "kaholo-plugin-ms-dynamics",
+  "version": "1.0.0",
+  "description": "Microsoft Dynamics plugin for Kaholo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kaholo team (Matan Kadosh)",
+  "license": "ISC",
+  "dependencies": {
+    "adal-node": "^0.2.1",
+    "dynamics-web-api": "^1.6.13",
+    "uuid": "^8.3.1"
+  }
+}
