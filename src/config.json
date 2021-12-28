@@ -6,8 +6,8 @@
   "execProgram": "node",
   "exposeRoute": false,
   "imgUrl": "logo.png",
-  "version": "1.0.0",
-  "settings" : [
+  "version": "1.0.2",
+  "settings": [
     {
       "name": "authorityUrl",
       "viewName": "Authority URL",
@@ -118,49 +118,50 @@
         {
           "name": "zipPath",
           "viewName": "ZIP Path",
-          "type":"string"
+          "type": "string"
         },
         {
           "name": "importJobId",
           "viewName": "importJobId",
-          "type":"string"
+          "type": "string"
         },
         {
           "name": "overwriteUnmanagedCustomizations",
           "viewName": "Overwrite Unmanaged Customizations",
-          "type":"boolean"
+          "type": "boolean"
         },
         {
           "name": "publishWorkflows",
           "viewName": "Publish Workflows",
-          "type":"boolean"
+          "type": "boolean"
         },
         {
           "name": "convertToManaged",
           "viewName": "Convert To Managed",
-          "type":"boolean"
+          "type": "boolean"
         },
         {
           "name": "skipProductUpdateDependencies",
           "viewName": "Skip Product Update Dependencies",
-          "type":"boolean"
+          "type": "boolean"
         },
         {
           "name": "holdingSolution",
           "viewName": "Holding Solution",
-          "type":"boolean"
+          "type": "boolean"
         },
         {
           "name": "skipQueueRibbonJob",
           "viewName": "Skip Queue Ribbon Job",
-          "type":"boolean"
+          "type": "boolean"
         },
         {
           "name": "asyncRibbonProcessing",
           "viewName": "Async Ribbon Processing",
-          "type":"boolean"
+          "type": "boolean"
         }
       ]
     }
-  ]
+  ],
+  "category": "CRM"
 }
